@@ -1,0 +1,38 @@
+{
+  "greedy_57": {
+    "avg_cosine_distance": 0.6918,
+    "avg_dist_to_centroid": 0.8115,
+    "std_dist_to_centroid": 0.1009,
+    "effective_dim_95": 23,
+    "model": "greedy_57",
+    "n_responses": 30,
+    "method": "tfidf_char_ngram"
+  },
+  "qd_57": {
+    "avg_cosine_distance": 0.7106,
+    "avg_dist_to_centroid": 0.8237,
+    "std_dist_to_centroid": 0.0917,
+    "effective_dim_95": 23,
+    "model": "qd_57",
+    "n_responses": 30,
+    "method": "tfidf_char_ngram"
+  },
+  "random_57": {
+    "avg_cosine_distance": 0.698,
+    "avg_dist_to_centroid": 0.8141,
+    "std_dist_to_centroid": 0.1097,
+    "effective_dim_95": 23,
+    "model": "random_57",
+    "n_responses": 30,
+    "method": "tfidf_char_ngram"
+  },
+  "full": {
+    "avg_cosine_distance": 0.7731,
+    "avg_dist_to_centroid": 0.8635,
+    "std_dist_to_centroid": 0.0416,
+    "effective_dim_95": 23,
+    "model": "full",
+    "n_responses": 30,
+    "method": "tfidf_char_ngram"
+  }
+}

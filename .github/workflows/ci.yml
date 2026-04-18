@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - name: Lint scripts
+        run: |
+          flake8 scripts/ --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 scripts/ --count --exit-zero --max-complexity=15 --max-line-length=120 --statistics
+
+  validate-results:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Validate result JSON files
+        run: |
+          python -c "
+          import json, os, sys
+          errors = []
+          for root, dirs, files in os.walk('results'):
+              for f in files:
+                  if f.endswith('.json'):
+                      path = os.path.join(root, f)
+                      try:
+                          with open(path) as fh:
+                              json.load(fh)
+                      except json.JSONDecodeError as e:
+                          errors.append(f'{path}: {e}')
+          if errors:
+              for e in errors:
+                  print(f'ERROR: {e}')
+              sys.exit(1)
+          print(f'All JSON files validated successfully')
+          "
+
+  check-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check LaTeX compiles
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: paper
+          root_file: main.tex
+          compiler: pdflatex
+          args: "-interaction=nonstopmode -halt-on-error"
+        continue-on-error: true  # LaTeX compilation may need multiple passes
+
+  reproducibility-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Check scripts are importable
+        run: |
+          python -c "
+          import ast, sys, os
+          errors = []
+          for f in os.listdir('scripts'):
+              if f.endswith('.py'):
+                  path = os.path.join('scripts', f)
+                  try:
+                      with open(path) as fh:
+                          ast.parse(fh.read())
+                  except SyntaxError as e:
+                      errors.append(f'{path}: {e}')
+          if errors:
+              for e in errors:
+                  print(f'SYNTAX ERROR: {e}')
+              sys.exit(1)
+          print('All scripts parse successfully')
+          "

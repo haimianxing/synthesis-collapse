@@ -1,0 +1,17 @@
+{
+  "qd_vs_greedy": {
+    "qd_wins": 14,
+    "opponent_wins": 16,
+    "ties": 0,
+    "n_comparisons": 30,
+    "qd_win_rate": 0.467
+  },
+  "qd_vs_random": {
+    "qd_wins": 9,
+    "opponent_wins": 21,
+    "ties": 0,
+    "n_comparisons": 30,
+    "qd_win_rate": 0.3
+  },
+  "judge_model": "qwen-plus"
+}

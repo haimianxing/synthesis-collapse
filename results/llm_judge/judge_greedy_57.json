@@ -1,0 +1,17 @@
+{
+  "model": "greedy_57",
+  "n_judged": 30,
+  "judge_model": "qwen-plus",
+  "professionalism_mean": 3.97,
+  "professionalism_std": 0.55,
+  "empathy_mean": 2.83,
+  "empathy_std": 0.93,
+  "problem_solving_mean": 2.57,
+  "problem_solving_std": 0.8,
+  "language_quality_mean": 3.97,
+  "language_quality_std": 0.66,
+  "overall_mean": 2.96,
+  "overall_std": 0.69,
+  "diversity_similarity_mean": 1.2,
+  "diversity_similarity_note": "lower=more diverse (1-5 scale)"
+}

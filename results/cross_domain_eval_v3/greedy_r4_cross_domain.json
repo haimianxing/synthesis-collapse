@@ -1,0 +1,16 @@
+{
+  "gsm8k": {
+    "accuracy": 0.908,
+    "correct": 454,
+    "total": 500
+  },
+  "math": {
+    "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+  },
+  "svamp": {
+    "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+  },
+  "asdiv": {
+    "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+  }
+}

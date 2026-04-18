@@ -1,0 +1,10 @@
+{
+  "strategy_coverage": 0.8888888888888888,
+  "n_strategies": 16,
+  "avg_empathy": 0.376,
+  "self_bleu": 0.5482914174901743,
+  "vocab_diversity": 0.5581891820061362,
+  "avg_length": 312.04,
+  "model": "greedy_57",
+  "seed": 123
+}

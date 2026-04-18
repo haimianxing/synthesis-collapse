@@ -1,0 +1,10 @@
+{
+  "strategy_coverage": 0.8888888888888888,
+  "n_strategies": 16,
+  "avg_empathy": 0.28800000000000003,
+  "self_bleu": 0.5397329290468313,
+  "vocab_diversity": 0.5529776660535177,
+  "avg_length": 325.0,
+  "model": "random_57",
+  "seed": 789
+}

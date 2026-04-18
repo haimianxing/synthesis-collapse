@@ -1,0 +1,29 @@
+% neurips_2026.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2026}[2026/01/01 NeurIPS 2026]
+
+\newif\if@neuripsfinal
+\DeclareOption{final}{\@neuripsfinaltrue}
+\ProcessOptions\relax
+
+\usepackage[letterpaper, margin=1in]{geometry}
+\RequirePackage{times}
+\RequirePackage{helvet}
+\RequirePackage{courier}
+\linespread{1}
+
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\Large\bfseries\@title\par}
+    \vskip 0.5em
+    {\normalsize\@author\par}
+  \end{center}
+  \vskip 1em
+}
+
+\setcounter{secnumdepth}{3}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\endinput

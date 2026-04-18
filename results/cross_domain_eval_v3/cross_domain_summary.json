@@ -1,0 +1,98 @@
+{
+  "qd_r1": {
+    "gsm8k": {
+      "accuracy": 0.906,
+      "correct": 453,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  },
+  "qd_r3": {
+    "gsm8k": {
+      "accuracy": 0.884,
+      "correct": 442,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  },
+  "qd_r4": {
+    "gsm8k": {
+      "accuracy": 0.888,
+      "correct": 444,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  },
+  "greedy_r3": {
+    "gsm8k": {
+      "accuracy": 0.876,
+      "correct": 438,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  },
+  "greedy_r4": {
+    "gsm8k": {
+      "accuracy": 0.908,
+      "correct": 454,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  },
+  "base": {
+    "gsm8k": {
+      "accuracy": 0.82,
+      "correct": 410,
+      "total": 500
+    },
+    "math": {
+      "error": "Couldn't reach 'HuggingFaceH4/MATH-500' on the Hub (OfflineModeIsEnabled)"
+    },
+    "svamp": {
+      "error": "Couldn't reach 'ChilleD/SVAMP' on the Hub (OfflineModeIsEnabled)"
+    },
+    "asdiv": {
+      "error": "Couldn't reach 'EleutherAI/asdiv' on the Hub (OfflineModeIsEnabled)"
+    }
+  }
+}

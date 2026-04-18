@@ -1,0 +1,46 @@
+# Models and checkpoints
+models/
+*.safetensors
+*.bin
+*.gguf
+merged_*/
+ckpt_*/
+
+# Large data files (download separately)
+data/raw/*.json
+data/raw/*.csv
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+*.log
+nohup.out
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temp
+tmp/
+temp/
+checkpoint.txt

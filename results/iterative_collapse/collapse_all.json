@@ -1,0 +1,240 @@
+{
+  "greedy_iter": [
+    {
+      "round": 0,
+      "coverage": 0.019,
+      "entropy": 4.221928094887362,
+      "self_bleu": 0.5396122869600043,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.07928176795580111,
+      "n_samples": 20,
+      "n_cells": 19
+    },
+    {
+      "round": 1,
+      "coverage": 0.029,
+      "entropy": 3.891124872044069,
+      "self_bleu": 0.6117541905343471,
+      "strategy_count": 9,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.024844194553583526,
+      "n_samples": 67,
+      "n_cells": 29
+    },
+    {
+      "round": 2,
+      "coverage": 0.018,
+      "entropy": 3.0365433913740367,
+      "self_bleu": 0.6074077912422912,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.01568019775496463,
+      "n_samples": 100,
+      "n_cells": 18
+    },
+    {
+      "round": 3,
+      "coverage": 0.012,
+      "entropy": 2.6510312184137033,
+      "self_bleu": 0.6211464560586553,
+      "strategy_count": 4,
+      "strategies": [
+        "S1",
+        "S2",
+        "S3",
+        "S8"
+      ],
+      "vocab_diversity": 0.01471619937437582,
+      "n_samples": 100,
+      "n_cells": 12
+    },
+    {
+      "round": 4,
+      "coverage": 0.012,
+      "entropy": 2.6510312184137033,
+      "self_bleu": 0.6211464560586553,
+      "strategy_count": 4,
+      "strategies": [
+        "S1",
+        "S2",
+        "S3",
+        "S8"
+      ],
+      "vocab_diversity": 0.01471619937437582,
+      "n_samples": 100,
+      "n_cells": 12
+    },
+    {
+      "round": 5,
+      "coverage": 0.012,
+      "entropy": 2.6510312184137033,
+      "self_bleu": 0.6211464560586553,
+      "strategy_count": 4,
+      "strategies": [
+        "S1",
+        "S2",
+        "S3",
+        "S8"
+      ],
+      "vocab_diversity": 0.01471619937437582,
+      "n_samples": 100,
+      "n_cells": 12
+    }
+  ],
+  "qd_iter": [
+    {
+      "round": 0,
+      "coverage": 0.019,
+      "entropy": 4.221928094887362,
+      "self_bleu": 0.5396122869600043,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.07928176795580111,
+      "n_samples": 20,
+      "n_cells": 19
+    },
+    {
+      "round": 1,
+      "coverage": 0.025,
+      "entropy": 4.643856189774723,
+      "self_bleu": 0.5680873475484899,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.058255269320843094,
+      "n_samples": 25,
+      "n_cells": 25
+    },
+    {
+      "round": 2,
+      "coverage": 0.027,
+      "entropy": 4.754887502163471,
+      "self_bleu": 0.57570291751197,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.055998723675813655,
+      "n_samples": 27,
+      "n_cells": 27
+    },
+    {
+      "round": 3,
+      "coverage": 0.027,
+      "entropy": 4.754887502163471,
+      "self_bleu": 0.587295892361009,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.0546406033553948,
+      "n_samples": 27,
+      "n_cells": 27
+    },
+    {
+      "round": 4,
+      "coverage": 0.029,
+      "entropy": 4.857980995127571,
+      "self_bleu": 0.5927364388165638,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.05199413350995884,
+      "n_samples": 29,
+      "n_cells": 29
+    },
+    {
+      "round": 5,
+      "coverage": 0.029,
+      "entropy": 4.857980995127571,
+      "self_bleu": 0.5844922240665237,
+      "strategy_count": 8,
+      "strategies": [
+        "S1",
+        "S10",
+        "S2",
+        "S3",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "vocab_diversity": 0.05044971008537643,
+      "n_samples": 29,
+      "n_cells": 29
+    }
+  ],
+  "metadata": {
+    "T": 5,
+    "n_per_round": 50,
+    "grid_res": 10
+  }
+}

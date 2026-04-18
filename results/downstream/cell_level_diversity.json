@@ -1,0 +1,31 @@
+{
+  "pairwise_diversity": {
+    "qd_57": 0.5611,
+    "greedy_57": 0.5119,
+    "random_57": 0.5383
+  },
+  "cell_occupation": {
+    "qd_unique_cells": 33,
+    "greedy_unique_cells": 20,
+    "random_unique_cells": 25,
+    "greedy_max_per_cell": 13,
+    "greedy_avg_per_cell": 2.9,
+    "greedy_redundant_cells": 12
+  },
+  "inter_cell_diversity": {
+    "qd": 0.5472,
+    "greedy": 0.5574,
+    "random": 0.5565
+  },
+  "strategy_coverage": {
+    "qd": 16,
+    "greedy": 10,
+    "random": 10
+  },
+  "redundancy_ratio": {
+    "qd": 1.73,
+    "greedy": 2.85,
+    "random": 2.28
+  },
+  "greedy_intra_cell_distance": 0.2593
+}

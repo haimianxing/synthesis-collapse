@@ -1,0 +1,17 @@
+{
+  "model": "qd_57",
+  "n_judged": 30,
+  "judge_model": "qwen-plus",
+  "professionalism_mean": 3.73,
+  "professionalism_std": 0.63,
+  "empathy_mean": 2.47,
+  "empathy_std": 0.72,
+  "problem_solving_mean": 2.4,
+  "problem_solving_std": 0.88,
+  "language_quality_mean": 3.93,
+  "language_quality_std": 0.51,
+  "overall_mean": 2.79,
+  "overall_std": 0.63,
+  "diversity_similarity_mean": 1.8,
+  "diversity_similarity_note": "lower=more diverse (1-5 scale)"
+}

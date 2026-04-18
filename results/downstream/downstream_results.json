@@ -1,0 +1,112 @@
+{
+  "greedy_57": {
+    "strategy_coverage": 0.6111111111111112,
+    "strategies_found": [
+      "S1",
+      "S10",
+      "S14",
+      "S16",
+      "S18",
+      "S2",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "conflict_dist": {
+      "高": 10,
+      "中": 50,
+      "低": 8
+    },
+    "vocab_diversity": 0.6467817896389325,
+    "self_bleu": 0.10252083718750385,
+    "empathy_score": 0.155,
+    "n_generated": 50,
+    "avg_length": 302.9,
+    "train_data": "greedy_57",
+    "n_train": 57
+  },
+  "qd_57": {
+    "strategy_coverage": 0.6111111111111112,
+    "strategies_found": [
+      "S11",
+      "S14",
+      "S16",
+      "S18",
+      "S2",
+      "S3",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "conflict_dist": {
+      "高": 9,
+      "中": 50,
+      "低": 9
+    },
+    "vocab_diversity": 0.6805349182763745,
+    "self_bleu": 0.09543204485212282,
+    "empathy_score": 0.17,
+    "n_generated": 50,
+    "avg_length": 344.06,
+    "train_data": "qd_57",
+    "n_train": 57
+  },
+  "random_57": {
+    "strategy_coverage": 0.5,
+    "strategies_found": [
+      "S14",
+      "S16",
+      "S18",
+      "S2",
+      "S4",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "conflict_dist": {
+      "高": 13,
+      "中": 50,
+      "低": 12
+    },
+    "vocab_diversity": 0.6477093206951027,
+    "self_bleu": 0.09369442628701888,
+    "empathy_score": 0.1625,
+    "n_generated": 50,
+    "avg_length": 312.12,
+    "train_data": "random_57",
+    "n_train": 57
+  },
+  "full": {
+    "strategy_coverage": 0.6111111111111112,
+    "strategies_found": [
+      "S10",
+      "S12",
+      "S13",
+      "S17",
+      "S18",
+      "S2",
+      "S3",
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "conflict_dist": {
+      "高": 14,
+      "中": 45,
+      "低": 43
+    },
+    "vocab_diversity": 0.6151711378353376,
+    "self_bleu": 0.123822794058684,
+    "empathy_score": 0.355,
+    "n_generated": 50,
+    "avg_length": 634.92,
+    "train_data": "full",
+    "n_train": 542
+  }
+}
