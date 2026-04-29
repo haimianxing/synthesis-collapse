@@ -2444,5 +2444,2451 @@
         "correct": true
       }
     ]
+  },
+  "qd_s42_r2": {
+    "round": 2,
+    "seed": 42,
+    "strategy": "qd",
+    "n_accumulated_samples": 360,
+    "n_generated": 1885,
+    "n_correct_gen": 143,
+    "n_cells_generated": 68,
+    "gen_entropy": 5.031935854834307,
+    "avg_quality_gen": 0.3569319186560565,
+    "n_selected": 120,
+    "n_cells_selected": 68,
+    "n_correct_selected": 87,
+    "sel_entropy": 5.646137213706958,
+    "sel_avg_quality": 0.8113888888888888,
+    "accuracy": 1.0,
+    "correct": 164,
+    "total": 164,
+    "elapsed_sec": 15545.24545097351,
+    "status": "complete",
+    "selected_data": [
+      {
+        "prompt": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).",
+        "cell": [
+          1,
+          2,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).",
+        "cell": [
+          2,
+          2,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          3,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to reverse words seperated by spaces in a given string.",
+        "cell": [
+          2,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find area of a sector. The function takes the radius and angle as inputs. Function should return None if the angle is larger than 360 degrees.",
+        "cell": [
+          1,
+          1,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check if the given tuple has any none value or not.",
+        "cell": [
+          0,
+          4,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+        "cell": [
+          2,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to rotate a given list by specified number of items to the right direction. https://www.geeksforgeeks.org/python-program-right-rotate-list-n/",
+        "cell": [
+          1,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the list in a list of lists whose sum of elements is the highest.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          0,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          1,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort each sublist of strings in a given list of lists.",
+        "cell": [
+          1,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort a dictionary by value.",
+        "cell": [
+          0,
+          0,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find nth centered hexagonal number.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          3,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to perform index wise addition of tuple elements in the given two nested tuples.",
+        "cell": [
+          2,
+          1,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          2,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to replace all spaces in the given string with '%20'.",
+        "cell": [
+          0,
+          3,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the median of three numbers.",
+        "cell": [
+          2,
+          0,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether it follows the sequence given in the patterns array.",
+        "cell": [
+          4,
+          3,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the median of two sorted lists of same size.",
+        "cell": [
+          4,
+          0,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+        "cell": [
+          1,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+        "cell": [
+          0,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+        "cell": [
+          0,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function that takes in a non-negative number and returns the number of prime numbers less than the given non-negative number.",
+        "cell": [
+          2,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to count the number of substrings with the sum of digits equal to their length.",
+        "cell": [
+          3,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function that takes in a string and character, replaces blank spaces in the string with the character, and returns the string.",
+        "cell": [
+          0,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to find the minimum difference between any two elements in a given array. https://www.geeksforgeeks.org/find-minimum-difference-pair/",
+        "cell": [
+          2,
+          0,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          2,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          3,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth newman–shanks–williams prime number.",
+        "cell": [
+          4,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function which takes a list and returns a list with the same elements, but the k'th element removed.",
+        "cell": [
+          0,
+          1,
+          0
+        ],
+        "quality": 0.5333333333333333,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert more than one list to nested dictionary.",
+        "cell": [
+          3,
+          4,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to reverse only the vowels of a given string (where y is not a vowel).",
+        "cell": [
+          3,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert rgb color to hsv color. https://www.geeksforgeeks.org/program-change-rgb-color-model-hsv-color-model/",
+        "cell": [
+          3,
+          1,
+          2
+        ],
+        "quality": 0.5333333333333333,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to find the sum of even factors of a number.",
+        "cell": [
+          3,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to find the sum of even factors of a number.",
+        "cell": [
+          4,
+          1,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to count the pairs of reverse strings in the given string list. https://www.geeksforgeeks.org/python-program-to-count-the-pairs-of-reverse-strings/",
+        "cell": [
+          3,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sum all amicable numbers from 1 to a specified number.",
+        "cell": [
+          4,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to perform the mathematical bitwise xor operation across the given tuples.",
+        "cell": [
+          2,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          1,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort the given array by using shell sort.",
+        "cell": [
+          3,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function takes in an integer and check whether the frequency of each digit in the integer is less than or equal to the digit itself.",
+        "cell": [
+          3,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to subtract two lists element-wise.",
+        "cell": [
+          4,
+          4,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to calculate whether the matrix is a magic square.",
+        "cell": [
+          4,
+          2,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert a snake case string to camel case string.",
+        "cell": [
+          1,
+          3,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in a sorted array, its length (n), and an element and returns whether the element is the majority element in the given sorted array. (The majority element is the element th",
+        "cell": [
+          1,
+          0,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to count inversions in an array.",
+        "cell": [
+          4,
+          0,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to extract the number of unique tuples in the given list.",
+        "cell": [
+          0,
+          2,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function for computing square roots using the babylonian method.",
+        "cell": [
+          4,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to put spaces between words starting with capital letters in a given string.",
+        "cell": [
+          2,
+          3,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function that takes an array and finds the maximum sum of a bitonic subsequence for the given array, where a sequence is bitonic if it is first increasing and then decreasing.",
+        "cell": [
+          4,
+          1,
+          4
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function that takes an array and finds the maximum sum of a bitonic subsequence for the given array, where a sequence is bitonic if it is first increasing and then decreasing.",
+        "cell": [
+          2,
+          1,
+          4
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function which takes two tuples of the same length and performs the element wise modulo.",
+        "cell": [
+          4,
+          4,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the largest sum of a contiguous array in the modified array which is formed by repeating the given array k times.",
+        "cell": [
+          1,
+          1,
+          4
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to concatenate each element of tuple by the delimiter.",
+        "cell": [
+          1,
+          3,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to move all the numbers to the end of the given string.",
+        "cell": [
+          2,
+          3,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          0,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          2,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          0,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the longest common subsequence for the given three string sequence. https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find k number of smallest pairs which consist of one element from the first array and one element from the second array.",
+        "cell": [
+          3,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find k number of smallest pairs which consist of one element from the first array and one element from the second array.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find nth centered hexagonal number.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find nth centered hexagonal number.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find nth centered hexagonal number.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find nth centered hexagonal number.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).",
+        "cell": [
+          1,
+          2,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          1,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          1,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the second smallest number in a list.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the second smallest number in a list.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      }
+    ]
+  },
+  "qd_s42_r3": {
+    "round": 3,
+    "seed": 42,
+    "strategy": "qd",
+    "n_accumulated_samples": 480,
+    "n_generated": 1885,
+    "n_correct_gen": 139,
+    "n_cells_generated": 68,
+    "gen_entropy": 5.031208309190052,
+    "avg_quality_gen": 0.35510610079575583,
+    "n_selected": 120,
+    "n_cells_selected": 68,
+    "n_correct_selected": 84,
+    "sel_entropy": 5.528024239174147,
+    "sel_avg_quality": 0.7958333333333333,
+    "accuracy": 1.0,
+    "correct": 164,
+    "total": 164,
+    "elapsed_sec": 15510.472337007523,
+    "status": "complete",
+    "selected_data": [
+      {
+        "prompt": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+        "cell": [
+          2,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          1,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the maximum difference between available pairs in the given tuple list.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all whitespaces from the given string.",
+        "cell": [
+          1,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function which takes a list and returns a list with the same elements, but the k'th element removed.",
+        "cell": [
+          0,
+          1,
+          0
+        ],
+        "quality": 0.5333333333333333,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the ascii value of a character.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the ascii value of a character.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).",
+        "cell": [
+          1,
+          2,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the product of numbers in a list is even or not.",
+        "cell": [
+          1,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function which takes a tuple of tuples and returns the average value for each tuple as a list.",
+        "cell": [
+          3,
+          2,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function that returns the list in a list of lists whose sum of elements is the highest.",
+        "cell": [
+          2,
+          2,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the nth newman–shanks–williams prime number.",
+        "cell": [
+          4,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to search a string for a regex pattern. The function should return the matching subtring, a start index and an end index.",
+        "cell": [
+          3,
+          1,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          2,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          3,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is undulating or not.",
+        "cell": [
+          3,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is undulating or not.",
+        "cell": [
+          2,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to check whether the count of divisors is even. https://www.w3resource.com/python-exercises/basic/python-basic-1-exercise-24.php",
+        "cell": [
+          2,
+          2,
+          1
+        ],
+        "quality": 0.7666666666666666,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to sort the given list.",
+        "cell": [
+          0,
+          0,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the size of the largest subset of a list of numbers so that every pair is divisible.",
+        "cell": [
+          4,
+          0,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          3,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to count those characters which have vowels as their neighbors in the given string.",
+        "cell": [
+          4,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert a snake case string to camel case string.",
+        "cell": [
+          1,
+          3,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          1,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the largest sum of a contiguous array in the modified array which is formed by repeating the given array k times.",
+        "cell": [
+          4,
+          1,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the largest sum of a contiguous array in the modified array which is formed by repeating the given array k times.",
+        "cell": [
+          1,
+          1,
+          4
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to concatenate each element of tuple by the delimiter.",
+        "cell": [
+          1,
+          3,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to replace all spaces in the given string with '%20'.",
+        "cell": [
+          0,
+          3,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is a perfect square or not. https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/",
+        "cell": [
+          2,
+          1,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort the given array by using shell sort.",
+        "cell": [
+          3,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort the given array by using shell sort.",
+        "cell": [
+          4,
+          0,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to check whether the given amount has no profit and no loss",
+        "cell": [
+          1,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in a sorted array, its length (n), and an element and returns whether the element is the majority element in the given sorted array. (The majority element is the element th",
+        "cell": [
+          3,
+          0,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to sort each sublist of strings in a given list of lists.",
+        "cell": [
+          1,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to count the number of occurrences of a number in a given list.",
+        "cell": [
+          0,
+          2,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+        "cell": [
+          1,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+        "cell": [
+          0,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to calculate the sum of perrin numbers.",
+        "cell": [
+          2,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to check if given tuple contains no duplicates.",
+        "cell": [
+          0,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the maximum sum of increasing subsequence from prefix until ith index and also including a given kth element which is after i, i.e., k > i .",
+        "cell": [
+          3,
+          1,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to check whether the given number can be represented as the difference of two squares or not.",
+        "cell": [
+          0,
+          4,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to count the total number of characters in a string.",
+        "cell": [
+          0,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to move all the numbers to the end of the given string.",
+        "cell": [
+          2,
+          3,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to remove lowercase substrings from a given string.",
+        "cell": [
+          2,
+          3,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to reverse only the vowels of a given string (where y is not a vowel).",
+        "cell": [
+          3,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check if a string represents an integer or not.",
+        "cell": [
+          4,
+          3,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in an array and an integer n, and re-arranges the first n elements of the given array so that all negative elements appear before positive ones, and where the relative orde",
+        "cell": [
+          2,
+          0,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function which takes two tuples of the same length and performs the element wise modulo.",
+        "cell": [
+          4,
+          4,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to convert the given string to lower case.",
+        "cell": [
+          0,
+          3,
+          3
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a python function to convert the given string to lower case.",
+        "cell": [
+          0,
+          4,
+          3
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to check whether it follows the sequence given in the patterns array.",
+        "cell": [
+          3,
+          4,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to find the nth tetrahedral number.",
+        "cell": [
+          0,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function for computing square roots using the babylonian method.",
+        "cell": [
+          3,
+          2,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function for computing square roots using the babylonian method.",
+        "cell": [
+          3,
+          2,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function for computing square roots using the babylonian method.",
+        "cell": [
+          3,
+          4,
+          2
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to perform the mathematical bitwise xor operation across the given tuples.",
+        "cell": [
+          2,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check if the given expression is balanced or not. https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/",
+        "cell": [
+          4,
+          4,
+          0
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function that takes an array and finds the maximum sum of a bitonic subsequence for the given array, where a sequence is bitonic if it is first increasing and then decreasing.",
+        "cell": [
+          4,
+          1,
+          4
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to replace whitespaces with an underscore and vice versa in a given string.",
+        "cell": [
+          0,
+          3,
+          1
+        ],
+        "quality": 0.3,
+        "correct": false
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to add a dictionary to the tuple. The output should be a tuple.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to check whether the given number is undulating or not.",
+        "cell": [
+          3,
+          4,
+          1
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+        "cell": [
+          2,
+          0,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to sort the given array by using shell sort.",
+        "cell": [
+          3,
+          0,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to remove all elements from a given list present in another list.",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the number of ways to partition a set of Bell numbers.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the perimeter of a square given its side length as input.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the perimeter of a square given its side length as input.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the perimeter of a square given its side length as input.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the perimeter of a square given its side length as input.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that returns the perimeter of a square given its side length as input.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function that takes in two numbers and returns a tuple with the second number and then the first number.",
+        "cell": [
+          0,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          0,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/",
+        "cell": [
+          1,
+          4,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert a string to a list of strings split on the space character.",
+        "cell": [
+          0,
+          3,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a python function to find the first repeated character in a given string.",
+        "cell": [
+          1,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to convert the given decimal number to its binary equivalent, represented as a string with no leading zeros.",
+        "cell": [
+          1,
+          4,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).",
+        "cell": [
+          1,
+          2,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to extract the nth element from a given list of tuples.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the next smallest palindrome of a specified integer, returned as an integer.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the next smallest palindrome of a specified integer, returned as an integer.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the next smallest palindrome of a specified integer, returned as an integer.",
+        "cell": [
+          1,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to count the pairs of reverse strings in the given string list. https://www.geeksforgeeks.org/python-program-to-count-the-pairs-of-reverse-strings/",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to count the pairs of reverse strings in the given string list. https://www.geeksforgeeks.org/python-program-to-count-the-pairs-of-reverse-strings/",
+        "cell": [
+          2,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the longest common subsequence for the given three string sequence. https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the longest common subsequence for the given three string sequence. https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to reverse words seperated by spaces in a given string.",
+        "cell": [
+          4,
+          1,
+          0
+        ],
+        "quality": 1.0,
+        "correct": true
+      },
+      {
+        "prompt": "Write a function to find the area of a rectangle.",
+        "cell": [
+          0,
+          1,
+          2
+        ],
+        "quality": 1.0,
+        "correct": true
+      }
+    ]
   }
 }
