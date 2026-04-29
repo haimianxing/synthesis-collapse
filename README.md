@@ -1,6 +1,6 @@
 # Synthesis Collapse: How Greedy Selection Destroys Behavioral Diversity in LLM Data Synthesis
 
-[![Paper](https://img.shields.io/badge/Paper-NeurIPS_2026-blue)](paper/main.tex)
+[![Paper]](paper/main.tex)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > When does data quality matter for fine-tuning? Under greedy selection, behavioral coverage shrinks by 2.4x --- yet this collapse is invisible on standard benchmarks in most practical settings.
