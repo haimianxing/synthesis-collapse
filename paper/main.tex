@@ -1,11 +1,8 @@
 \PassOptionsToPackage{numbers,sort&compress}{natbib}
 \documentclass{article}
-\usepackage{neurips_2026}
+\usepackage{neurips_2026} % official NeurIPS 2026 style (loads natbib, times, hyperref)
+
 \usepackage{amsthm}
-\usepackage{natbib}
-\usepackage{times}
-\usepackage{helvet}
-\usepackage{courier}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -13,10 +10,10 @@
 \usepackage{amssymb}
 \usepackage{algorithm}
 \usepackage{algorithmic}
-\usepackage{caption}
 \usepackage{subcaption}
-\usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{url}
 
 % Theorem-like environments
 \theoremstyle{plain}
@@ -26,9 +23,9 @@
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}
 
+
 \title{
-  Synthesis Collapse: How Greedy Selection Destroys\\
-  Behavioral Diversity in LLM Data Synthesis
+    Synthesis Collapse: How Greedy Selection Destroys Behavioral Diversity in LLM Data Synthesis
 }
 
 \author{
@@ -51,6 +48,7 @@ A full fine-tuning control eliminates noise but \emph{reverses} the strategy ran
 The mechanism reduces to per-cell deduplication, a trivial filter that matches full Quality-Diversity optimization ($p{=}0.98$).
 Our contribution is a \textbf{boundary condition analysis}: data quality matters downstream only when evaluation is below ceiling, training noise is low, and the training regime preserves coverage sensitivity.
 This analysis yields the first quantitative decision criterion for practitioners: when to invest in data curation versus simply increasing data quantity (Table~\ref{tab:decision}).
+
 \end{abstract}
 
 %% ============================================================
@@ -58,12 +56,14 @@ This analysis yields the first quantitative decision criterion for practitioners
 \label{sec:intro}
 
 Instruction tuning and alignment of large language models (LLMs)~\citep{zhao2024survey_alignment, touvron2023llama} depend on the quality and diversity of synthetic training data~\citep{self_instruct_2023, evol_instruct_2023, alpaca_2023}.
+
 Self-Instruct~\citep{self_instruct_2023} and its successors iteratively generate instruction--response pairs, expanding datasets from a small seed set.
 However, these iterative pipelines exhibit a recurring pattern of \emph{semantic collapse}~\citep{model_collapse_2023, data_collapse_2024}: as the dataset scales, the generated distribution narrows rather than broadens, surface paraphrases replace genuinely novel examples, and hard or rare behavior regions remain under-explored.
 
 We identify the root cause as a structural problem: modeling synthesis as maximizing a \emph{single} quality scalar---LLM judge score, perplexity, or reward model output---cannot guarantee distributional health. A greedy approach that always accepts the highest-scoring sample converges to a narrow region of the behavior space, systematically missing diverse but lower-quality examples.
 
 The collapse is \textbf{conditionally invisible on standard benchmarks}: greedy and diverse selection produce identical accuracy on HumanEval when evaluated with a 7B model (99--100\%), GSM8K with 7B (92\%), and standard fine-tuning metrics.
+
 However, with a 1.5B model where HumanEval is below ceiling, the coverage gap becomes a \textbf{2.1$\times$ pass@1 difference} ($p{<}0.0001$).
 Only by explicitly measuring behavioral coverage---the fraction of distinct solution types, difficulty levels, and problem structures in the training set---does the collapse become universally measurable.
 We term this \emph{conditionally invisible collapse}: the training data's distribution progressively narrows while aggregate accuracy remains stable when evaluation is saturated or training noise dominates.
@@ -71,6 +71,7 @@ We term this \emph{conditionally invisible collapse}: the training data's distri
 \textbf{Our contribution.}
 We do not propose a new data synthesis method.
 Instead, we ask a meta-question: \emph{under what conditions does data quality---measured either as correctness or behavioral coverage---produce detectable differences in downstream model performance?}
+
 We provide the first boundary condition analysis for this question across three domains and two model scales, with downstream evaluation confirming invisible collapse in all three.
 
 To measure collapse, we define a low-dimensional behavior descriptor space $\phi(x) \in [0,1]^d$ with domain-specific descriptors (Table~\ref{tab:descriptors}).
@@ -86,6 +87,7 @@ Our main contributions are:
 %% ============================================================
 \section{Related Work}
 \label{sec:related}
+
 
 \textbf{Synthetic data for LLMs.}
 Self-Instruct~\citep{self_instruct_2023} bootstraps instruction--response pairs from seed tasks; Evol-Instruct~\citep{evol_instruct_2023} applies evolutionary operators to mutate instructions.
@@ -124,9 +126,19 @@ We use LLM ratings for quality scoring (Dialogue: text-length proxy correlating 
 \section{Predictive Framework}
 \label{sec:method}
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_overview.jpeg}
+\caption{Framework overview. Greedy selection concentrates budget in covered cells, while per-cell deduplication maximizes behavioral coverage (left). The detectability threshold $\eta^2$ (Eq.~\ref{eq:eta_squared}) parameterized by LoRA rank (Eq.~\ref{eq:eta_rank}) predicts three regimes (center), yielding two independent signatures: P1 (coverage grows monotonically) and P2 (noise artifact shrinks). All eight predictions confirmed (right, Table~\ref{tab:predictions}).}
+\label{fig:overview}
+\end{figure*}
+
 We formalize synthesis collapse and establish a predictive framework for \emph{when} coverage gaps are detectable downstream.
+
 The section has two goals: (1) show that per-cell deduplication is the coverage-optimal selection strategy (Observation~\ref{prop:optimal}, Proposition~\ref{prop:submodular}), and (2) derive a detectability threshold (Corollary~\ref{cor:detect}) parameterized by training capacity (Eq.~\ref{eq:eta_rank}) that predicts regime transitions.
+
 The value of this section is not in any single component---Observation~\ref{prop:optimal} is straightforward, submodularity is classical, and the ANOVA decomposition is standard---but in their \emph{combination}: the framework transforms the invisible collapse phenomenon from an anecdotal observation into a testable, quantitative prediction.
+
 No prior work connects coverage optimality, greedy deficit, and detectability into a single predictive pipeline that yields eight falsifiable predictions, all confirmed (Table~\ref{tab:predictions}).
 
 Figure~\ref{fig:overview} summarizes the full pipeline.
@@ -134,16 +146,12 @@ Given a synthetic data pool, \textbf{greedy selection} concentrates samples in a
 Whether this coverage advantage translates into measurable downstream gains depends on the detectability threshold (Eq.~\ref{eq:eta_squared}), which decomposes into three regimes parameterized by training capacity (center).
 We validate all regime predictions across 150 experimental configurations spanning three domains, two model scales, and five LoRA ranks, confirming every prediction (right).
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/fig_overview.pdf}
-\caption{Framework overview. Greedy selection concentrates budget in covered cells, while per-cell deduplication maximizes behavioral coverage (left). The detectability threshold $\eta^2$ (Eq.~\ref{eq:eta_squared}) parameterized by LoRA rank (Eq.~\ref{eq:eta_rank}) predicts three regimes (center), yielding two independent signatures: P1 (coverage grows monotonically) and P2 (noise artifact shrinks). All eight predictions confirmed (right, Table~\ref{tab:predictions}).}
-\label{fig:overview}
-\end{figure*}
+
 
 \subsection{Behavior Descriptors and Grid}
 
 Let $\mathcal{X}$ denote the space of synthetic samples and $\phi: \mathcal{X} \to [0,1]^d$ be a \emph{behavior descriptor} that maps each sample to a grid cell $g = \text{discretize}(\phi(x), r)$ in a discretized grid $\mathcal{G}$ with resolution $r$ per dimension, yielding $|\mathcal{G}| = r^d$ cells.
+
 We design domain-specific descriptors (Table~\ref{tab:descriptors}) that are low-dimensional ($d{\leq}4$), computable from single-pass LLM ratings or simple heuristics, and semantically meaningful.
 
 
@@ -184,8 +192,10 @@ Quality-only greedy selection provides no approximation guarantee for coverage; 
 \end{proposition}
 
 \emph{Proofs in Appendix~\ref{sec:proof}.}
+
 This result has a crisp implication: the classical $(1{-}1/e)$ approximation for submodular maximization~\citep{nemhauser1978analysis} applies only when the greedy criterion matches the objective; quality-based selection optimizes a different (additive, non-submodular) objective, so this guarantee does not apply---the coverage deficit can be arbitrarily large.
 Greedy selection wastes budget on redundant samples in already-covered cells (80--86\% waste), while per-cell deduplication achieves 100\% fill efficiency.
+
 
 \paragraph{Detectability threshold.}
 We model downstream performance as a function of data correctness $\rho$ and coverage $C_s/C_{\max}$:
@@ -201,14 +211,17 @@ For two strategies with coverage gap $\Delta C$, the ANOVA effect size is:
 \eta^2 = \frac{\beta^2 \cdot (\Delta C / C_{\max})^2 \cdot \rho^2}{\beta^2 \cdot (\Delta C / C_{\max})^2 \cdot \rho^2 + \sigma^2_\varepsilon}
 \label{eq:eta_squared}
 \end{equation}
+
 The gap is detectable at level $\alpha$ with $N$ seeds when:
 \begin{equation}
 \frac{\beta \cdot \Delta C / C_{\max}}{\hat{\sigma} \cdot \sqrt{2/N}} > t_{\alpha/2,\, 2N-2}
 \label{eq:detectability}
 \end{equation}
+
 \end{corollary}
 
 Eq.~\ref{eq:eta_squared}--\ref{eq:detectability} together provide a signal-to-noise criterion: $\eta^2$ quantifies what fraction of total variance the coverage signal explains, and the detectability threshold translates this into a testable condition.
+
 This yields three regimes:
 \textbf{(1) Detectable} ($\eta^2 \gg 0$): Code 1.5B ($\eta^2{=}0.95$, $d{=}8.58$);
 \textbf{(2) Ceiling} ($\beta \approx 0$): Code 7B (99--100\%);
@@ -223,7 +236,9 @@ Under LoRA with rank $r$, gradient variance scales as $\sigma^2_\varepsilon \pro
 The noise floor $c/\sqrt{m(r)}$ \emph{decreases} as rank grows, yielding two \emph{a priori} predictions: \textbf{(P1)} the QD$-$Greedy gap ($\Delta C > 0$, structural) grows monotonically as the noise floor drops; \textbf{(P2)} the Random$-$QD gap ($\Delta C \approx 0$, noise-driven) shrinks because Random's implicit regularization advantage vanishes when capacity reduces variance.
 Both confirmed (Figure~\ref{fig:regimes}).
 
+
 \paragraph{Information-theoretic interpretation.}
+
 Under the additive noise model $M = f(C) + \varepsilon$ where $\varepsilon \sim \mathcal{N}(0, \sigma^2_\varepsilon)$ is independent of $C$, the mutual information between data composition and downstream performance satisfies:
 \begin{equation}
 I(C; M) = \frac{1}{2}\log\!\left(\frac{1}{1 - \eta^2}\right) \;\geq\; \frac{\eta^2}{2}
@@ -330,7 +345,6 @@ Round & Greedy & QD & Greedy & QD & Greedy & QD \\
 We test on a 4,563-solution pool at $k \in \{500, 1000, 2000\}$ with 5 LoRA seeds (Table~\ref{tab:kscale_v10}, Appendix~\ref{sec:app_exp}).
 The downstream advantage is non-monotonic: QD wins at $k{=}500$ (+7.7pp), Greedy wins at $k{=}1000$, and Random matches both at $k{=}2000$ (noise washes out selection), confirming the detectability framework predicts when coverage advantages translate to downstream gains.
 
-
 \subsection{Validation of the Detectability Threshold}
 \label{sec:val_threshold}
 
@@ -340,6 +354,7 @@ Varying rank $\in \{4, 8, 16, 32, 64\}$ at $k{=}500$ with the 7B model (5 seeds/
 \textbf{(P2)} Random$-$QD gap shrinks ($+26.7 \to +6.9$pp, 74\% reduction).
 A Math domain sweep confirms P1 ($+0.3 \to +2.7$pp) but shows no inverted-U---Random never beats QD---because in Math, quality and diversity share variance ($\eta^2{=}0.97$) versus Code's orthogonality ($\eta^2{=}0.14$) (Tables~\ref{tab:rank_sweep}, \ref{tab:math_rank_sweep}, Appendix~\ref{sec:app_exp}).
 This domain-specific difference is itself a framework prediction: when quality--diversity correlation is high, coverage-based selection provides no additional signal beyond quality.
+
 
 \textbf{Noise injection.}
 Three controlled $k{=}500$ configurations (0\%, 60\%, 6\% correct data, 5 seeds): the $\infty\times$ correctness difference produces \textbf{no detectable downstream effect} ($25.6{\pm}18.9\%$ vs.\ $19.1{\pm}20.1\%$, Welch $p{=}0.615$; ANOVA $\eta^2{=}0.031$, $p{=}0.83$; Table~\ref{tab:noise}, Appendix~\ref{sec:app_downstream}).
@@ -361,9 +376,11 @@ The mechanism is that Random's high variance ($\sigma{=}13.2\%$, CV$=$38\%) span
 At $r{=}64$, the Random$-$QD gap narrows to 7.0pp ($p{=}0.57$ with $n{=}5$ seeds; detecting a 7pp gap at $\sigma{\approx}14\%$ requires $N{>}30$ seeds), while both far outperform Greedy ($40.2\%$).
 The framework correctly predicts the shrinking direction but the current sample size is underpowered to confirm full convergence---a useful negative result in itself.
 
+
 \begin{table}[t]
 \centering
 \caption{Predictive validation of the detectability threshold. Top: framework calibration on primary experiments. Bottom: out-of-sample predictions derived a priori from Eq.~\ref{eq:detectability}; all confirmed.}
+
 \label{tab:predictions}
 \begin{tabular}{lccc}
 \toprule
@@ -386,6 +403,7 @@ Dialogue 1.5B (8 seed) & Noise & $p{=}0.77$, all metrics & \checkmark \\
 
 \textbf{Mechanism and cross-domain evidence.}
 Four lines of evidence identify per-cell dedup as the operative mechanism: (1) surprisal ablation shows removing exploration improves stability; (2) QD and Simple-Dedup produce identical results across all conditions (Table~\ref{tab:code_selfsynthesis}); (3) cumulative training shows QD- and Greedy-trained models produce nearly identical generation pools (${\leq}7\%$ cell gap); (4) noise injection confirms $\infty\times$ correctness differences are invisible downstream ($p{=}0.615$).
+
 All three domains confirm invisible collapse under LoRA noise despite QD maintaining 1.5--2.6$\times$ more cells.
 The framework's role is \emph{analytical}, not algorithmic: the descriptor space (Table~\ref{tab:descriptors}) makes coverage measurable and dedup semantically grounded---deduplication on random hash bins would be meaningless.
 The rank sweep confirms that P1 (coverage, structural) and P2 (noise artifact) are independent: P1 grows monotonically while P2 shrinks by 74\% at $r{=}64$, with the cross-domain Code/Math difference predicted by quality--diversity correlation ($\eta^2{=}0.14$ vs.\ $0.97$).
@@ -394,11 +412,33 @@ The rank sweep confirms that P1 (coverage, structural) and P2 (noise artifact) a
 \textbf{Practical recommendations.}
 Table~\ref{tab:decision} summarizes when per-cell dedup provides measurable downstream benefits.
 
+% \begin{table}[h]
+% \centering
+% \caption{Decision guide: when to invest in coverage-aware selection.}
+
+% \label{tab:decision}
+% \begin{tabular}{p{2.5cm}p{2cm}p{2.5cm}}
+% \toprule
+% \textbf{Condition} & \textbf{Regime} & \textbf{Recommendation} \\
+% \midrule
+% PEFT + base acc. $<$ 90\% & Detectable & Define descriptors, apply per-cell dedup (2.1$\times$) \\
+% PEFT + $r{\geq}64$ & Near-detectable & Descriptor-based dedup advantage emerges (13.8pp) \\
+% Full FT + limited data & Qty-bottlenecked & Increase $n$; dedup secondary \\
+% Base accuracy $\geq$ 95\% & Ceiling & Monitor coverage; dedup maintains diversity \\
+% Multi-seed std $>$ 10pp & Noise & Curation unlikely to register \\
+% \midrule
+% \multicolumn{3}{l}{\textbf{Key:} descriptor design (Table~\ref{tab:descriptors}) is the non-trivial component.} \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
 \begin{table}[h]
 \centering
 \caption{Decision guide: when to invest in coverage-aware selection.}
 \label{tab:decision}
-\begin{tabular}{p{2.5cm}p{2cm}p{2.5cm}}
+% 使用 tabularx，总宽度设为 \linewidth（页面宽度）
+% 把 Recommendation 列设为 X，它会自动填充剩余空间
+\begin{tabularx}{\linewidth}{p{2.5cm}p{2cm}X}
 \toprule
 \textbf{Condition} & \textbf{Regime} & \textbf{Recommendation} \\
 \midrule
@@ -410,17 +450,18 @@ Multi-seed std $>$ 10pp & Noise & Curation unlikely to register \\
 \midrule
 \multicolumn{3}{l}{\textbf{Key:} descriptor design (Table~\ref{tab:descriptors}) is the non-trivial component.} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
+
 
 \textbf{Limitations.}
 Descriptors require domain expertise, though Table~\ref{tab:descriptors} provides reusable templates; scalability to 100K+ samples is untested; quality estimation is largely vacuous in practice; no iterative generation advantage was found; and cumulative LoRA drift dominates accuracy from R2 onward.
 In all regimes, we recommend applying per-cell deduplication as a minimal safeguard (zero computational overhead) and monitoring data-level coverage metrics rather than relying solely on downstream accuracy.
 
+
 %% ============================================================
 \section{Conclusion}
 \label{sec:conclusion}
-
 We have provided the first systematic characterization of \emph{synthesis-phase collapse} and a quantitative framework for predicting when it matters downstream.
 Three conclusions emerge.
 
@@ -436,7 +477,6 @@ Under LoRA at $r{=}16$, noise dominates ($\sigma{=}6$--13pp) and even $\infty\ti
 At $r{=}64$, coverage effects emerge (+13.8pp over Greedy).
 Under full fine-tuning, noise vanishes but data quantity dominates diversity (81\% vs.\ 20\%).
 Practitioners should monitor data-level coverage metrics and calibrate curation investment to both the detectability regime and the training method.
-
 
 %% ============================================================
 \section*{Ethics Statement}
@@ -462,10 +502,19 @@ All code, synthetic data, and evaluation scripts will be released upon publicati
 \textbf{Quality scoring:} Text-length proxy for Dialogue (correlation with LLM judge $r{=}0.72$); verified against rule-based and uniform scoring (Appendix~\ref{sec:app_ablation}).
 \textbf{Compute:} 1$\times$A800-80GB for fine-tuning ($\sim$10s per 57-sample configuration, 3 epochs); DashScope API for generation ($\sim$650 calls per domain).
 
+
+
+
+
 {\small
 \bibliographystyle{unsrtnat}
 \bibliography{references}
 }
+
+%% ============================================================
+%% NeurIPS Paper Checklist (REQUIRED - desk reject if missing)
+%% ============================================================
+\input{checklist}
 
 %% ============================================================
 \appendix
@@ -828,6 +877,7 @@ Random & 200 & $30.0 \pm 5.1$ & $81.0 \pm 0.5$ & $-4.7$ \\
 \section{Additional Experimental Details}
 \label{sec:app_exp}
 
+
 \textbf{Large-scale k-scaling.}
 Table~\ref{tab:kscale_v10} reports the full k-scaling experiment (7B, 4563-solution pool, 5 LoRA seeds, HumanEval pass@1).
 QD maintains maximum coverage (71 cells) at all scales.
@@ -863,6 +913,7 @@ Random & 63--65 & 15\% & $20.9 \pm 3.8$ & 6.6 \\
 \end{table}
 
 {\small QD/Greedy cells deterministic; Random shows range across 3 selection seeds.}
+
 
 \textbf{LoRA rank sweep.}
 Table~\ref{tab:rank_sweep} reports the full rank sweep experiment (7B model, $k{=}500$, 5 seeds per cell, HumanEval pass@1).
