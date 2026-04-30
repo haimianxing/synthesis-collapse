@@ -47,7 +47,7 @@
     \item {\bf Experimental result reproducibility}
     \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
     \item[] Answer: \answerYes{}
-    \item[] Justification: The Reproducibility section provides all hyperparameters: models (Qwen3.5-122B-A10B via DashScope API; Qwen2.5-1.5B/7B-Instruct with LoRA $r{=}16, \alpha{=}32$), training details (3 epochs, lr $2{\times}10^{-4}$, AdamW 8-bit, bf16), grid parameters ($r{=}10, d{=}3, k{=}57, q_{\min}{=}0.5$), all random seeds (8 seeds for 1.5B, 5 seeds for 7B), and evaluation settings. Code is available at \url{https://github.com/haimianxing/synthesis-collapse}.
+    \item[] Justification: The Reproducibility section provides all hyperparameters: models (Qwen3.5-122B-A10B via DashScope API; Qwen2.5-1.5B/7B-Instruct with LoRA $r{=}16, \alpha{=}32$), training details (3 epochs, lr $2{\times}10^{-4}$, AdamW 8-bit, bf16), grid parameters ($r{=}10, d{=}3, k{=}57, q_{\min}{=}0.5$), all random seeds (8 seeds for 1.5B, 5 seeds for 7B), and evaluation settings. Code is available at \url{https://github.com/anonymous/synthesis-collapse}.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that the paper does not include experiments.
@@ -67,7 +67,7 @@
 \item {\bf Open access to data and code}
     \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
     \item[] Answer: \answerYes{}
-    \item[] Justification: Code and evaluation scripts are released at \url{https://github.com/haimianxing/synthesis-collapse} with 93 experiment scripts covering all three domains. The CCSE-CS dialogue dataset is available upon request (under review). Public benchmarks (MBPP, HumanEval, GSM8K) are accessible via standard repositories.
+    \item[] Justification: Code and evaluation scripts are released at \url{https://github.com/anonymous/synthesis-collapse} with 93 experiment scripts covering all three domains. The CCSE-CS dialogue dataset is available upon request (under review). Public benchmarks (MBPP, HumanEval, GSM8K) are accessible via standard repositories.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that paper does not include experiments requiring code.
@@ -178,7 +178,7 @@
 \item {\bf New assets}
     \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
     \item[] Answer: \answerYes{}
-    \item[] Justification: The code repository (\url{https://github.com/haimianxing/synthesis-collapse}) includes 93 experiment scripts with documentation, a comprehensive README with reproduction instructions, and all experimental results in JSON format. No new pre-trained models or datasets are released.
+    \item[] Justification: The code repository (\url{https://github.com/anonymous/synthesis-collapse}) includes 93 experiment scripts with documentation, a comprehensive README with reproduction instructions, and all experimental results in JSON format. No new pre-trained models or datasets are released.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that the paper does not release new assets.
